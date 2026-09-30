@@ -73,6 +73,18 @@ flowchart LR
 
 ---
 
+## 3.2 工程 / 技术 Spec
+
+| 文档 | 覆盖 | 决策 |
+|---|---|---|
+| [TECH-SPEC-00 前端工程架构](./TECH-SPEC-00-前端工程架构.md) | 技术栈、分层、目录、状态/数据、PWA、测试 | **Vite + React + TypeScript + PWA**（正式工程） |
+
+**选型摘要**：Vite 6 · React 18+ · TS strict · **React Router 7** · Zustand · **CSS Modules + CSS 变量 Token** · Zod · IndexedDB · vite-plugin-pwa · Vitest/Playwright。上架阶段用 Capacitor，不改业务代码。
+
+**已拍板（原开放问题）**：路由库 = React Router 7（不用 TanStack Router）；样式 = CSS Modules + Token（不用 Tailwind）。
+
+---
+
 ## 4. 本阶段明确不做
 
 | 不做 | 原因 | 何时再开 |
@@ -122,6 +134,7 @@ flowchart LR
 - [x] 明确快照过期、Boost 偏差、Forge/Helper 检测不到等局限的产品处理方式
 - [x] 每份 Spec 有可勾选的验收清单，便于实现后回归
 - [x] 前端 Spec 覆盖：每屏功能、配色/字体 Token、组件与状态
+- [x] 工程架构：技术栈、目录分层、数据/状态、PWA 与测试策略已写入 TECH-SPEC-00
 
 ---
 
@@ -129,6 +142,7 @@ flowchart LR
 
 1. 产品正式命名（视觉已定：夜间工棚深色；Light 主题 P2）。
 2. 多账号：MVP 是否只支持单村庄（建议是，降低复杂度）。
-3. 静态游戏库：内置打包 vs 首次启动下载；版本如何跟游戏更新。
-4. 通知渠道默认策略：MVP 仅 Notification API，还是同时做 PWA Web Push。
+3. 静态游戏库：内置打包 vs 首次启动下载；版本如何跟游戏更新（详见 TECH-SPEC-00 §12）。
+4. 通知渠道：MVP 仅本地 Notification；Web Push 为第二阶段（TECH-SPEC §7）。
 5. 金卡折扣默认开或关（影响时间估算口径）。
+6. ~~路由/样式库~~ 已定：React Router 7 + CSS Modules（见 TECH-SPEC-00）。
