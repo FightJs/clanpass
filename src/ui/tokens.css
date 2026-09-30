@@ -1,0 +1,83 @@
+/* 工头 · 夜间工棚 — 对齐 UI-SPEC-00 */
+:root {
+  --bg: #0c1017;
+  --bg-2: #121826;
+  --card: #1a2233;
+  --card-2: #222c40;
+  --ink: #e8ecf4;
+  --ink-2: #a8b2c4;
+  --ink-3: #6b7589;
+  --line: rgba(232, 236, 244, 0.08);
+  --line-strong: rgba(232, 236, 244, 0.14);
+  --gold: #f0b429;
+  --gold-weak: rgba(240, 180, 41, 0.14);
+  --lab: #8b7cf6;
+  --lab-weak: rgba(139, 124, 246, 0.14);
+  --event: #4c9aff;
+  --event-weak: rgba(76, 154, 255, 0.14);
+  --ok: #3ddc97;
+  --ok-weak: rgba(61, 220, 151, 0.14);
+  --warn: #f5a524;
+  --warn-weak: rgba(245, 165, 36, 0.14);
+  --danger: #f07178;
+  --danger-weak: rgba(240, 113, 120, 0.12);
+  --overlay: rgba(6, 8, 12, 0.72);
+  --font-sans:
+    "PingFang SC", "SF Pro Text", "Noto Sans SC", "Microsoft YaHei", system-ui,
+    sans-serif;
+  --font-num: "SF Mono", "JetBrains Mono", "Roboto Mono", ui-monospace, monospace;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-pill: 999px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (min-width: 431px) {
+  body {
+    background: #080b10;
+  }
+}

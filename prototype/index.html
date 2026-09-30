@@ -12,11 +12,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="description" content="工头 · 建筑工与实验室升级倒计时助手" />
     <title>工头</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
 <p data-aigc-mark="1" style="margin:0 0 8px;font-size:10px;line-height:1.3;color:#6b6560;font-weight:400;">AI生成</p>
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="app" role="application" aria-label="工头"></div>
+    <div id="layer"></div>
+    <script src="./app.js"></script>
   </body>
 </html>

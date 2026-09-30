@@ -1,0 +1,205 @@
+.btn {
+  height: 48px;
+  border-radius: var(--r-sm);
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  transition:
+    opacity 0.15s ease,
+    transform 0.1s ease;
+}
+
+.btn:active {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+
+.primary {
+  background: var(--gold);
+  color: #1a1200;
+  height: 52px;
+}
+
+.secondary {
+  background: var(--card-2);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.ghost {
+  color: var(--ink-2);
+  font-weight: 500;
+  height: 44px;
+}
+
+.btnDanger {
+  background: var(--danger-weak);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.badge {
+  height: 22px;
+  padding: 0 8px;
+  border-radius: var(--r-pill);
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gold {
+  background: var(--gold-weak);
+  color: var(--gold);
+}
+.lab {
+  background: var(--lab-weak);
+  color: var(--lab);
+}
+.ok {
+  background: var(--ok-weak);
+  color: var(--ok);
+}
+.warn {
+  background: var(--warn-weak);
+  color: var(--warn);
+}
+.event {
+  background: var(--event-weak);
+  color: var(--event);
+}
+.danger {
+  background: var(--danger-weak);
+  color: var(--danger);
+}
+
+.switch {
+  width: 44px;
+  height: 26px;
+  border-radius: var(--r-pill);
+  background: var(--card-2);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.switchOn {
+  background: var(--gold);
+  justify-content: flex-end;
+}
+
+.knob {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ink-3);
+  display: block;
+}
+
+.switchOn .knob {
+  background: #fff;
+}
+
+.listRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+
+.rowLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.rowName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rowName.danger {
+  color: var(--danger);
+}
+
+.rowSub {
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.rowRight {
+  font-size: 12px;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.track {
+  height: 6px;
+  border-radius: var(--r-pill);
+  background: var(--card-2);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+
+.fill.lab {
+  background: var(--lab);
+}
+.fill.ok {
+  background: var(--ok);
+}
+.fill.warn {
+  background: var(--warn);
+}
+.fill.event {
+  background: var(--event);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 14px 16px;
+}
+
+.list {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.list .listRow:last-child {
+  border-bottom: none;
+}

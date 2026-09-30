@@ -1,0 +1,79 @@
+.account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--gold-weak);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.accName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.accMeta {
+  font-size: 11px;
+  color: var(--ink-2);
+  margin-top: 2px;
+}
+
+.list {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.name.danger {
+  color: var(--danger);
+}
+
+.sub {
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.right {
+  font-size: 12px;
+  color: var(--ink-3);
+  flex-shrink: 0;
+}

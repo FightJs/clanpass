@@ -1,0 +1,100 @@
+.hero {
+  background: var(--event-weak);
+  border: 1px solid var(--event);
+  border-radius: var(--r-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heroLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--event);
+}
+
+.heroName {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.heroTime {
+  font-family: var(--font-num);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--event);
+  font-variant-numeric: tabular-nums;
+}
+
+.heroDesc {
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.heroAdv {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.ongoing {
+  border-color: var(--gold);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rowName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rowSub {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.tip {
+  font-size: 11px;
+  color: var(--ink-3);
+  flex-shrink: 0;
+}
+
+.empty {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.collapsed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  width: 100%;
+  font-size: 12px;
+  color: var(--ink-2);
+}

@@ -1,0 +1,89 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.almost {
+  border-color: rgba(245, 165, 36, 0.35);
+}
+
+.done {
+  opacity: 0.72;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  min-width: 0;
+}
+
+.stripe {
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.stripe.gold {
+  background: var(--gold);
+}
+
+.stripe.lab {
+  background: var(--lab);
+}
+.stripe.warn {
+  background: var(--warn);
+}
+.stripe.ok {
+  background: var(--ok);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.finish {
+  color: var(--ink-3);
+  font-family: var(--font-num);
+  font-size: 11px;
+}
+
+.time {
+  font-family: var(--font-num);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5px;
+}
+
+.time.warn {
+  color: var(--warn);
+}
+.time.ok {
+  color: var(--ok);
+}
+.time.lab {
+  color: var(--lab);
+}

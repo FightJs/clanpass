@@ -1,0 +1,167 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 14px 16px;
+}
+
+.statBig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.pct {
+  font-family: var(--font-num);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.statFoot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mini {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 12px;
+}
+
+.miniLabel {
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.miniVal {
+  font-family: var(--font-num);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.miniSub {
+  font-size: 11px;
+  color: var(--ink-2);
+}
+
+.segmented {
+  display: flex;
+  gap: 3px;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 3px;
+  height: 36px;
+}
+
+.segmented button {
+  flex: 1;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.segActive {
+  background: var(--gold-weak) !important;
+  color: var(--gold) !important;
+  font-weight: 600 !important;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--ink-2);
+  display: inline-flex;
+  align-items: center;
+}
+
+.chipActive {
+  background: var(--gold-weak);
+  border-color: var(--gold);
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.list {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.heroRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.heroRow:last-child {
+  border-bottom: none;
+}
+
+.nr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nm {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rt {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bar {
+  height: 5px;
+  border-radius: var(--r-pill);
+  background: var(--card-2);
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  border-radius: var(--r-pill);
+  background: var(--gold);
+}
+
+.barOk {
+  background: var(--ok) !important;
+}
+
+.lvl {
+  font-family: var(--font-num);
+  font-size: 10px;
+  color: var(--ink-3);
+}

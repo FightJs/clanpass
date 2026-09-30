@@ -1,0 +1,206 @@
+.shell {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 431px) {
+  .shell {
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+  }
+}
+
+.statusBar {
+  height: calc(54px + var(--safe-top));
+  padding: calc(8px + var(--safe-top)) 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: var(--font-num);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.statusIcons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.statusIcons svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--ink);
+}
+
+.topBar {
+  height: 48px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.side {
+  min-width: 64px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sideRight {
+  justify-content: flex-end;
+}
+
+.iconBtn {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-sm);
+  color: var(--ink-2);
+}
+
+.iconBtn svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.75;
+}
+
+.snapshot {
+  height: 28px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.snapshotAct {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.contentCenter {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabDock {
+  flex-shrink: 0;
+  padding: 0 16px 12px;
+  padding-bottom: calc(12px + var(--safe-bottom));
+  background: var(--bg);
+}
+
+.tabBar {
+  height: 56px;
+  border-radius: 28px;
+  background: rgba(26, 34, 51, 0.96);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  padding: 6px;
+  gap: 4px;
+}
+
+.tabItem {
+  flex: 1;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--ink-3);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.tabItem svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.75;
+}
+
+.tabItem.active {
+  font-weight: 600;
+}
+
+.tabItem.gold.active {
+  background: var(--gold-weak);
+  color: var(--gold);
+}
+
+.tabItem.blue.active {
+  background: var(--event-weak);
+  color: var(--event);
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--ink-3);
+  padding: 4px 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionLabel .right {
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.sectionLabel.lab {
+  color: var(--lab);
+}
+
+.sectionLabel.event {
+  color: var(--event);
+}
+
+.footerNote {
+  font-size: 11px;
+  color: var(--ink-3);
+  text-align: center;
+  line-height: 1.5;
+}

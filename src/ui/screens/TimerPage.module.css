@@ -1,0 +1,217 @@
+.heroArt {
+  width: 180px;
+  height: 130px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 8px;
+}
+
+.circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold-weak);
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+}
+
+.circle svg {
+  width: 32px;
+  height: 32px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.75;
+}
+
+.emptyTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.emptySub {
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.5;
+  max-width: 280px;
+  margin-bottom: 8px;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold-weak);
+  color: var(--gold);
+  font-family: var(--font-num);
+  font-size: 12px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.village {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.overview {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ovTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ovLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--ink-3);
+}
+
+.ovBot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.ovBig {
+  font-family: var(--font-num);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.ovWho {
+  font-size: 12px;
+  color: var(--ink-2);
+  margin-top: 2px;
+}
+
+.ovLabLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--lab);
+}
+
+.ovLabVal {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emptyBox {
+  color: var(--ink-2);
+  font-size: 13px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+}
+
+.labRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.labStripe {
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  background: var(--lab);
+  flex-shrink: 0;
+}
+
+.labTitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.labSub {
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.labTime {
+  font-family: var(--font-num);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--lab);
+  font-variant-numeric: tabular-nums;
+}
+
+.hintStrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-2);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 11px;
+}
+
+.hintA {
+  color: var(--warn);
+}
+
+.hintB {
+  color: var(--ink-3);
+}
